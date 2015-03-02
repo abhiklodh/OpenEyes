@@ -49,7 +49,7 @@
 				$objWriter->setLineEnding("\n");
 				$objWriter->setSheetIndex($i);
 
-				$saveFilename = dirname(__FILE__)."/sheets/".$name;
+				$saveFilename = dirname(__FILE__)."/csv/".$name;
 
 				if (file_exists($saveFilename))
 					$saveFilename = $saveFilename.time();
