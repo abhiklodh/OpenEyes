@@ -1,0 +1,4 @@
+"MEHBookingLogger","remotes/origin/develop","yes","+ removed unnecessary debug"
+"MEHBookingLogger","remotes/origin/hotfix/oe-4050","no","[OE-4050] Latest set of tweaks."
+"MEHBookingLogger","remotes/origin/master","yes","+ removed unnecessary debug"
+"MEHBookingLogger","remotes/origin/release/1.7","yes","Add EMG string for required log fields"

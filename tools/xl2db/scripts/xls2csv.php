@@ -1,9 +1,15 @@
 <?php
-	require_once dirname(__FILE__) . '/phpexcel/Classes/PHPExcel.php';
+	function camelToUnderscore($s)
+        {
+            $name = strtolower(preg_replace('/([a-z])([A-Z])/', '$1_$2', $s));
+            return $name;
+        }
 
-
+	$baseDir = dirname(dirname(__FILE__));
+	require_once(dirname($baseDir)."/lib/phpexcel/Classes/PHPExcel.php");
+	
 	// Create new PHPExcel object
-	$files = `ls xl`;
+	$files = `ls $baseDir/xl`;
 
 	$files = explode("\n", trim($files));
 
@@ -25,7 +31,7 @@
 
 		try
 		{
-			$filename = dirname(__FILE__)."/xl/$file";
+			$filename = $baseDir."/xl/$file";
 			echo "Opening $filename\n";
 			$xl  = PHPExcel_IOFactory::load($filename);
 		
@@ -49,7 +55,9 @@
 				$objWriter->setLineEnding("\n");
 				$objWriter->setSheetIndex($i);
 
-				$saveFilename = dirname(__FILE__)."/csv/".$name;
+				$name2 = camelToUnderscore($name);
+
+				$saveFilename = $baseDir."/csv/".$name2;
 
 				if (file_exists($saveFilename))
 					$saveFilename = $saveFilename.time();

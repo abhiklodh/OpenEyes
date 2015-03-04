@@ -1,0 +1,6 @@
+"deploy","remotes/origin/feature/glaucoma-2.1","no",""
+"deploy","remotes/origin/feature/vc","no","+ ORA IOPg has been added manually live, so no longer want to insert it during deployment"
+"deploy","remotes/origin/jira/OE-5154","no","[OE-5154] added child-related diagnoses data for g2.1"
+"deploy","remotes/origin/jira/OE-5210","no","[OE-5210] Add groups to common ophthalmic diagnoses"
+"deploy","remotes/origin/jira/OE-5214","no","[OE-5214] create 'Other' further finding"
+"deploy","remotes/origin/master","yes","added --tags"

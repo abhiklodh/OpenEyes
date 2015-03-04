@@ -1,0 +1,5 @@
+"OphNuPreoperative","remotes/origin/develop","no","[ORB-133] fixed delete view"
+"OphNuPreoperative","remotes/origin/master","yes","first comit"
+"OphNuPreoperative","remotes/origin/release/1.6-orbis","no","[ORB-133] fixed delete view"
+"OphNuPreoperative","remotes/origin/release/orbis-r1","no",""
+"OphNuPreoperative","remotes/origin/release/orbis-r2","no","[ORB-501] Use generic patient model method to allow medications without any option specified to be saved correctly."
